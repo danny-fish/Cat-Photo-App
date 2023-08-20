@@ -34,9 +34,14 @@
                 <h2>Cat Form</h2>
                 <form action="submit.html">
                   <fieldset>
-                    <legend>Is your cat a park or street skater?</legend>
-                    <label><input id="park" type="radio" name="park-street" value="park"> Park</label>
-                    <label><input id="street" type="radio" name="park-street" value="street"> Street</label>
+                    <legend>Does your cat skate regular or goofy stance?</legend>
+                    <label><input id="regular" type="radio" name="regular-goofy" value="regular">Regular</label>
+                    <label><input id="goofy" type="radio" name="regular-goofy" value="goofy">Goofy</label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Where does you cat skate?</legend>
+                    <input id="street" type="checkbox" name="location"> <label for="street">Street</label>
+                    <input id="park" type="checkbox" name="location"> <label for="park">Park</label>
                   </fieldset>
                   <input type="text" name="catphotourl" placeholder="cat photo URL" required>
                   <button type="submit">Submit</button>
